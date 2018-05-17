@@ -1,0 +1,105 @@
+/*
+colors:
+sort: #141414;
+grå: #f1f1f1;
+hvid: #ffffff;
+
+gul: #ffdd00;
+orange: #ff801c;
+rød: #f76769;
+lys-blå: #009fc1;
+mørk-blå: #287bb2;
+*/
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Raleway;
+  src: url(../fonts/raleway/Raleway-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Amatic SC";
+  src: url(../fonts/amatic-sc/AmaticSC-Regular.ttf);
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  color: #141414;
+  font-family: Raleway, sans-serif;
+}
+
+nav{
+  background-color: transparent;
+  box-shadow: none;
+  height: 110px;
+  display: flex;
+  margin-bottom: 30px;
+}
+
+nav ul.right{
+  margin-top: 45px;
+}
+
+nav ul li a{
+  color: #141414;
+}
+
+.brand-logo{
+  align-self: flex-start;
+}
+
+.brand-logo img{
+  width: 250px;
+  margin-top: 10px;
+}
+
+.sidenav-trigger{
+  color: #141414;
+}
+
+.wrapper{
+  background-color: dodgerblue;
+  min-height: 100px;
+  flex: 1 0 auto;
+}
+
+.page-footer{
+  background-color: #f1f1f1;
+  color: #141414;
+  margin-top: 30px;
+}
+
+.footer-logo img{
+  max-width: 200px;
+}
+
+.footer-copyright{
+  text-align: center;
+}
+
+footer .footer-copyright .container{
+  color: #141414;
+}
+
+.some-links {
+  width: 70px;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  margin: auto;
+}
+
+.some-links img{
+  width: 70px;
+  max-width: 100%;
+}

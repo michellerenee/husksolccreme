@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>Husk solcreme</title>
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+  <link type="text/css" rel="stylesheet" href="css/solstyle.css"  media="screen,projection"/>
+</head>
+<body>
+
+<nav>
+  <div class="container">
+    <div class="nav-wrapper">
+      <a href="#!" class="brand-logo"><img src="img/logo.png" alt="Husk solcreme logo"></a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="sass.html">Sass</a></li>
+        <li><a href="badges.html">Components</a></li>
+        <li><a href="collapsible.html">Javascript</a></li>
+        <li><a href="mobile.html">Mobile</a></li>
+      </ul>
+    </div><!-- nav-wrapper end -->
+  </div><!-- container end -->
+</nav>
+
+<ul class="sidenav" id="mobile-demo">
+  <li><a href="sass.html">Sass</a></li>
+  <li><a href="badges.html">Components</a></li>
+  <li><a href="collapsible.html">Javascript</a></li>
+  <li><a href="mobile.html">Mobile</a></li>
+</ul>
+
+<div class="wrapper container">
+
+</div><!-- wrapper end -->
+
+<footer class="page-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col l6 s12 footer-logo">
+        <img src="img/logo.png" alt="husk solcremes logo">
+        <p>Vi lærer dig, at passe bedre på dig selv!</p>
+      </div>
+      <div class="col l1 s4 offset-l3">
+        <a class="some-links" href="#"
+           target="_blank"><img src="img/insta.png" alt="link til husk solcremes instagram profil"></a>
+      </div>
+      <div class="col l1 s4">
+        <a class="some-links" href="#" target="_blank"><img src="img/face.png" alt="link til husk solcremes facebook side"></a>
+      </div>
+      <div class="col l1 s4">
+        <a class="some-links" href="#"
+           target="_blank"><img src="img/youtube.png" alt="link til husk solcremes youtube kanal"></a>
+      </div>
+    </div><!-- row end -->
+  </div><!-- container end -->
+  <div class="footer-copyright">
+    <div class="container">
+      <p>© 2018 Copyright - Husk Solcreme</p>
+    </div><!-- container end -->
+  </div><!-- footer-copyright end -->
+</footer>
+
+<!-- loader materialize's javascript -->
+<script type="text/javascript" src="js/materialize.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $('.sidenav').sidenav();
+    });
+</script>
+
+</body>
+</html>
