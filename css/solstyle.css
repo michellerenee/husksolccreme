@@ -39,6 +39,8 @@ body {
 
 h1, h2, h3 {
 	font-family: "Amatic SC", serif;
+    margin:0;
+    padding: 0;
 }
 
 nav{
@@ -88,20 +90,22 @@ nav ul li a{
 
 .wrapper{
   background-color: dodgerblue;
-  min-height: 100px;
+  min-height: 100vh;
+  height: auto;  
   flex: 1 0 auto;
 }
 
 .banner-box {
-	background-color: crimson;
-	height: 300px;
-	width: 50%;
-	padding: 20px 0;
+    background-color: aquamarine;
+	height: auto;
+	width: 100%;
+    margin: 20px 0;
 
 }
 
-.right {
+.banner-box-right{
 	text-align: right;
+    background-color: chartreuse;
 }
 
 /*--------------- Footer styling --------------*/ 
