@@ -37,6 +37,10 @@ body {
   font-family: Raleway, sans-serif;
 }
 
+h1, h2, h3 {
+	font-family: "Amatic SC", serif;
+}
+
 nav{
   background-color: transparent;
   box-shadow: none;
@@ -88,6 +92,19 @@ nav ul li a{
   flex: 1 0 auto;
 }
 
+.banner-box {
+	background-color: crimson;
+	height: 300px;
+	width: 50%;
+	padding: 20px 0;
+
+}
+
+.right {
+	text-align: right;
+}
+
+/*--------------- Footer styling --------------*/ 
 .page-footer{
   background-color: #f1f1f1;
   color: #141414;
