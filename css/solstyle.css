@@ -18,6 +18,7 @@ mørk-blå: #287bb2;
   box-sizing: border-box;
 }
 
+/* henter skrifttyperne */
 @font-face {
   font-family: Raleway;
   src: url(../fonts/raleway/Raleway-Regular.ttf);
@@ -41,7 +42,6 @@ nav{
   box-shadow: none;
   height: 110px;
   display: flex;
-  margin-bottom: 30px;
 }
 
 nav ul.right{
@@ -64,6 +64,23 @@ nav ul li a{
 .sidenav-trigger{
   color: #141414;
 }
+
+.navigation-banner{
+  margin: 30px 0;
+  text-align: center;
+}
+
+.navigation-banner h1{
+  font-size: 2em;
+  margin: 20px 0;
+  color: white;
+}
+
+/* farvet bg til hovedsageligt navigation-banner */
+.color-orange{ background-color: #ff801c; }
+.color-blue{ background: #287bb2; }
+.color-red{ background: #f76769; }
+
 
 .wrapper{
   background-color: dodgerblue;
@@ -95,7 +112,6 @@ footer .footer-copyright .container{
   display: flex;
   align-items: center;
   padding: 0;
-  margin: 0;
   margin: auto;
 }
 
