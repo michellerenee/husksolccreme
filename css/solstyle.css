@@ -43,6 +43,10 @@ h1, h2, h3 {
     padding: 0;
 }
 
+p{ 
+margin-bottom: 15px;
+}
+
 nav{
   background-color: transparent;
   box-shadow: none;
@@ -72,7 +76,7 @@ nav ul li a{
 }
 
 .navigation-banner{
-  margin: 30px 0;
+  margin-bottom: 30px;
   text-align: center;
 }
 
@@ -100,6 +104,7 @@ nav ul li a{
 	height: auto;
 	width: 100%;
     margin: 20px 0;
+    padding: 10px;
 
 }
 
@@ -107,6 +112,30 @@ nav ul li a{
 	text-align: right;
     background-color: chartreuse;
 }
+.banner-box-text{
+    margin: 60px;
+}
+/* -- Banner box - knap --*/
+.btn{
+    background-color: rgba(255, 0, 0, 0.2);
+    color: #141414;
+}
+.btn:hover{
+    background-color: rgba(255, 225, 0, 0.7);
+}
+/*--------------------Quiz---------------------*/
+
+
+/*------------------Liste styling---------------------------*/
+ul.uv-straaling{
+margin-bottom: 20px;}
+
+ul.uv-straaling:not(.browser-default)>li{
+list-style-type:disc;
+margin:5px 20px;
+
+}
+
 
 /*--------------- Footer styling --------------*/ 
 .page-footer{
