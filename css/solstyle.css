@@ -133,15 +133,27 @@ nav ul li:hover .sol{
 	width: 100%;
     margin: 20px 0;
     padding: 10px;
+    position: relative;
 
+}
+.banner-box img{
+    width: 100%;
+    z-index: 1;
+    
 }
 
 .banner-box-right{
 	text-align: right;
     background-color: chartreuse;
+    
 }
 .banner-box-text{
     margin: 60px;
+    z-index: 100; 
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    
 }
 /* -- Banner box - knap --*/
 .btn{
