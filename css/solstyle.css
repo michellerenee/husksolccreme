@@ -175,8 +175,26 @@ list-style-type:disc;
 margin:5px 20px;
 
 }
-
-
+/*----------------Missions side -----------------*/
+/* animation*/
+#animation_container{
+    max-width:  100%;
+    float:right;
+}
+/*Kontakt form */
+form{
+    position: relative;
+}
+.kontaktbtn{
+    float: right;
+}
+/*------------ Hudtype side -------------------*/
+.cirkeldiagram{
+    max-width: 100%;
+}
+.straler{
+    max-width: 100%;
+}
 /*--------------- Footer styling --------------*/ 
 .page-footer{
   background-color: #f1f1f1;
