@@ -26,9 +26,15 @@
   <!--Import materialize.css-->
   <link type="text/css" rel="stylesheet" href="../css/materialize.min.css"  media="screen,projection"/>
   <link type="text/css" rel="stylesheet" href="../css/solstyle.css"  media="screen,projection"/>
+  <!-- hent js -->
   <script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
-  <script src="../js/solskoldet.js"></script>
-  <script src="../js/animation.js"></script>
+
+  <!-- hent animate genereret js -->
+  <script src="../js/skoldet_ani.js"></script>
+  <!-- hent js til at køre animationen (fra html filen fra animate) -->
+  <script src="../js/animation.js">
+
+  </script>
 </head>
 <body onload="init();">
 
@@ -67,14 +73,16 @@
       <p> Vi vil vejlede i hudtyper og hvad kan din hudtype klare.</p>
       <div class="col s4"></div>
     </div>
-    
-    <div id="animation_container" style="background-color:rgba(255, 255, 255, 1.00); width:160px; height:600px">
-		<canvas id="canvas" width="160" height="600" style="position: absolute; display: block; background-color:rgba(255, 255, 255, 1.00);"></canvas>
-		<div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:160px; height:600px; position: absolute; left: 0px; top: 0px; display: block;">
-		</div>
-	</div>
-   
-    <div class="col s12"><h2> Send os en besked </h2></div>
+
+   <!-- animation -->
+   <div id="animation_container" style="background-color:rgba(255, 255, 255, 1.00); width:160px; height:600px">
+     <canvas id="canvas" width="160" height="600" style="position: absolute; display: block; background-color:rgba(255, 255, 255, 1.00);"></canvas>
+     <div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:160px; height:600px; position: absolute; left: 0px; top: 0px; display: block;">
+     </div>
+   </div>
+
+
+   <div class="col s12"><h2> Send os en besked </h2></div>
     <div class="row">
     <form class="col s12">
       <div class="row">
@@ -137,9 +145,9 @@
 <!-- loader materialize's javascript -->
 <script type="text/javascript" src="../js/materialize.min.js"></script>
 <script>
-    $(document).ready(function(){
-        $('.sidenav').sidenav();
-    });
+    //$(document).ready(function(){
+      //  $('.sidenav').sidenav();
+    //});
 </script>
 
 </body>
