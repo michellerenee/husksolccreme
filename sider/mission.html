@@ -4,20 +4,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="description" content="">
+   <meta name="author" content="Michelle Renee Jensen - www.michellerenee.dk, Nadja Uhrenfeldt - www.nadjauhrenfeldt.dk, Charlotte Mundt - www.charlottemundt.dk">
+  <meta name="description" content="Vi ønsker at skabe et større fokus på at solbeskyttelse, er mere end blot solcreme.  Samtidig vil vi sætte fokus på konsekvenserne når man ikke bruger solbeskyttelse.">
 
   <!-- link-deling på facebook -->
-  <meta property="og:title" content="">
-  <meta property="og:description" content="">
-  <meta property="og:image" content="">
-  <meta property="og:url" content="">
+  <meta property="og:title" content="husksolcreme.dk">
+  <meta property="og:description" content="Vi ønsker at skabe et større fokus på at solbeskyttelse, er mere end blot solcreme.  Samtidig vil vi sætte fokus på konsekvenserne når man ikke bruger solbeskyttelse.">
+  <meta property="og:image" content='<img src="#">'><!--Husk billeder-->
+  <meta property="og:url" content="www.husksolcreme.dk/">
 
   <!-- link-deling på twitter -->
-  <meta name="twitter:title" content="">
-  <meta name="twitter:description" content="">
-  <meta name="twitter:image" content="">
-  <meta name="twitter:card" content="">
-
+  <meta name="twitter:title" content="Husksolcreme.dk">
+  <meta name="twitter:description" content="Vi ønsker at skabe et større fokus på at solbeskyttelse, er mere end blot solcreme.  Samtidig vil vi sætte fokus på konsekvenserne når man ikke bruger solbeskyttelse.">
+  <meta name="twitter:image" content='<img src="#">'><!--Husk billeder-->
+  <meta name="twitter:card" content="www.husksolcreme.dk/">
+  
   <link rel="icon" href="../img/solcremer7.png">
   <title>Husk solcreme</title>
   <!--Import Google Icon Font-->
@@ -25,10 +26,13 @@
   <!--Import materialize.css-->
   <link type="text/css" rel="stylesheet" href="../css/materialize.min.css"  media="screen,projection"/>
   <link type="text/css" rel="stylesheet" href="../css/solstyle.css"  media="screen,projection"/>
+  <script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
+  <script src="../js/solskoldet.js"></script>
+  <script src="../js/animation.js"></script>
 </head>
-<body>
+<body onload="init();">
 
-<a href="../index.html">Hjem</a>
+
 <nav>
   <div class="container">
     <div class="nav-wrapper">
@@ -63,6 +67,13 @@
       <p> Vi vil vejlede i hudtyper og hvad kan din hudtype klare.</p>
       <div class="col s4"></div>
     </div>
+    
+    <div id="animation_container" style="background-color:rgba(255, 255, 255, 1.00); width:160px; height:600px">
+		<canvas id="canvas" width="160" height="600" style="position: absolute; display: block; background-color:rgba(255, 255, 255, 1.00);"></canvas>
+		<div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:160px; height:600px; position: absolute; left: 0px; top: 0px; display: block;">
+		</div>
+	</div>
+   
     <div class="col s12"><h2> Send os en besked </h2></div>
     <div class="row">
     <form class="col s12">
@@ -84,7 +95,7 @@
     <div class="row">
     <form class="col s12">
       <div class="row">
-        <div class="input-field col s6">
+        <div class="input-field col s12">
           <i class="material-icons prefix">mode_edit</i>
           <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
           <label for="icon_prefix2">Din besked</label>
