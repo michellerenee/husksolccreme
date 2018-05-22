@@ -60,6 +60,9 @@ nav ul.right{
 
 nav ul li a{
   color: #141414;
+    z-index: 10;
+    position: relative;
+   
 }
 
 .brand-logo{
@@ -73,6 +76,31 @@ nav ul li a{
 
 .sidenav-trigger{
   color: #141414;
+}
+
+.sol, .activesol{
+    height: 20px;
+    width: 20px;
+    border-radius: 100%;
+    background-color: #ffdd00;
+    z-index: 1;
+    margin: 15px 0 0 5px;
+    position: absolute;
+    display: none;
+    
+}
+.activesol{
+    display: block;   
+}
+.activesoltekst{
+   font-weight: bold; 
+}
+nav ul a:hover{
+    background-color: transparent;
+    font-weight: bold;
+}
+nav ul li:hover .sol{
+    display: inline;
 }
 
 .navigation-banner{
