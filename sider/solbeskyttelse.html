@@ -62,7 +62,9 @@
       <div class="col s8">
           <p>Mellem kl. 12 og 15 er uv-strålerne stærkest. I dette tidpunkt falder næsten halvdelen af uv-strålingen. Det kan være god ide af undgå uv-stråling ved at søge skygge midt på dagen, hvis du skal opholde dig direkte i solen, så prøv så vidt muligt at gør det før 12 eller efter 15. </p>
           <p>Du kan godt blive brun selvom du opholder dig i skyggen, solens stråler reflekteres nemlig af overflader som vand, beton, sand og sne. Dette betyder altså, at uv-strålerne rammer dig selvom opholder dig i skyggen, du kan endda få farve på en overskyet sommerdag. Skyerne slipper 30-70 % af solens stråler igennem alt efter skylagets tykkelse. </p>
-          <p>Tag din egen skygge med. Der mange situationer i sommermånederne, hvor det ikke altid er nemt finde skygge. I de situationer er det heldigvis muligt at tage sin egen skygge med i from af en parasol eller nogen lignende. Til at skygge kroppen kan du bruge en solhat eller noget let men tæt vævet tøj.</p>
+        <p>Der er mange situationer i sommermånederne, hvor det ikke altid er nemt at finde skygge. I de situationer
+        er det heldigvis muligt at tage sin egen skygge med. Det kan være i form af en parasol eller noget lignende.
+        Til at beskytte kroppen kan du bruge en solhat og noget let og tætvævet tøj.</p>
           <p><em>Husk solcreme, hvor tøjet ikke dækker</em></p>
       </div>
       <div class="col s4"> Billed af skygge</div>
@@ -159,8 +161,9 @@
 <!-- loader materialize's javascript -->
 <script type="text/javascript" src="../js/materialize.min.js"></script>
 <script>
-    $(document).ready(function(){
-        $('.sidenav').sidenav();
+    document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.sidenav');
+        var instances = M.Sidenav.init(elems);
     });
 </script>
 

@@ -87,7 +87,7 @@
     </div>
   </div>
 	<!-- Quiz -->
-	<div class="quiz"> <h2> Den store solbeskyttelse quiz</h2></div>
+	<div class="quiz"> <h2> Den store solbeskyttelses quiz</h2></div>
 
 </div><!-- wrapper end -->
 
@@ -120,9 +120,10 @@
 <!-- loader materialize's javascript -->
 <script type="text/javascript" src="js/materialize.min.js"></script>
 <script>
-    $(document).ready(function(){
-        $('.sidenav').sidenav();
+    document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.sidenav');
+        var instances = M.Sidenav.init(elems);
     });
-</script>
+</script></script>
 </body>
 </html>
