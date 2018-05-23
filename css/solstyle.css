@@ -47,6 +47,10 @@ p{
 margin-bottom: 15px;
 }
 
+.row .col{
+  padding: 0;
+}
+
 nav{
   background-color: transparent;
   box-shadow: none;
@@ -234,6 +238,10 @@ input:not([type]):focus:not([readonly])+label, input[type=text]:not(.browser-def
 
 .input-field .prefix.active{
   color: #287bb2;
+}
+
+.input-field .prefix{
+  left: 0.8rem;
 }
 
 /*--------------- Footer styling --------------*/ 
