@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="096c96d6-ca38-4f43-862c-3c200b15b306" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sider/mission.html" afterPath="$PROJECT_DIR$/sider/mission.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sider/hudtyper.html" afterPath="$PROJECT_DIR$/sider/hudtyper.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -42,10 +43,10 @@
       <file leaf-file-name="hudtyper.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/sider/hudtyper.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1963">
-              <caret line="162" column="22" lean-forward="true" selection-start-line="162" selection-start-column="22" selection-end-line="162" selection-end-column="22" />
+            <state relative-caret-position="-1044">
+              <caret line="98" column="29" lean-forward="false" selection-start-line="98" selection-start-column="29" selection-end-line="98" selection-end-column="29" />
               <folding>
-                <marker date="1527070469970" expanded="true" signature="7176:7353" ph="..." />
+                <marker date="1527072276494" expanded="true" signature="5184:5358" ph="..." />
               </folding>
             </state>
           </provider>
@@ -102,10 +103,10 @@
         <option value="$PROJECT_DIR$/js/animation.js" />
         <option value="$PROJECT_DIR$/js/skoldet_ani.js" />
         <option value="$PROJECT_DIR$/sider/solbeskyttelse.html" />
-        <option value="$PROJECT_DIR$/sider/hudtyper.html" />
         <option value="$PROJECT_DIR$/sider/mission.html" />
         <option value="$PROJECT_DIR$/css/solstyle.css" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/sider/hudtyper.html" />
       </list>
     </option>
   </component>
@@ -211,12 +212,12 @@
       <workItem from="1526980553680" duration="1108000" />
       <workItem from="1526985907095" duration="2066000" />
       <workItem from="1527058011667" duration="8919000" />
-      <workItem from="1527071771795" duration="66000" />
+      <workItem from="1527071771795" duration="523000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23464000" />
+    <option name="totallyTimeSpent" value="23921000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -301,7 +302,7 @@
         <state relative-caret-position="790">
           <caret line="188" column="9" lean-forward="true" selection-start-line="165" selection-start-column="0" selection-end-line="188" selection-end-column="9" />
           <folding>
-            <marker date="1527070469970" expanded="true" signature="7176:7353" ph="..." />
+            <marker date="1527072276494" expanded="true" signature="5184:5358" ph="..." />
           </folding>
         </state>
       </provider>
@@ -471,7 +472,7 @@
         <state relative-caret-position="790">
           <caret line="155" column="9" lean-forward="true" selection-start-line="132" selection-start-column="0" selection-end-line="155" selection-end-column="9" />
           <folding>
-            <marker date="1527070469970" expanded="true" signature="7176:7353" ph="..." />
+            <marker date="1527072276494" expanded="true" signature="5184:5358" ph="..." />
           </folding>
         </state>
       </provider>
@@ -646,10 +647,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/sider/hudtyper.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1963">
-          <caret line="162" column="22" lean-forward="true" selection-start-line="162" selection-start-column="22" selection-end-line="162" selection-end-column="22" />
+        <state relative-caret-position="-1044">
+          <caret line="98" column="29" lean-forward="false" selection-start-line="98" selection-start-column="29" selection-end-line="98" selection-end-column="29" />
           <folding>
-            <marker date="1527070469970" expanded="true" signature="7176:7353" ph="..." />
+            <marker date="1527072276494" expanded="true" signature="5184:5358" ph="..." />
           </folding>
         </state>
       </provider>
