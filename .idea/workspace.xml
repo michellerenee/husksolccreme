@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="096c96d6-ca38-4f43-862c-3c200b15b306" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sider/hudtyper.html" afterPath="$PROJECT_DIR$/sider/hudtyper.html" />
-    </list>
+    <list default="true" id="096c96d6-ca38-4f43-862c-3c200b15b306" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -212,12 +209,12 @@
       <workItem from="1526980553680" duration="1108000" />
       <workItem from="1526985907095" duration="2066000" />
       <workItem from="1527058011667" duration="8919000" />
-      <workItem from="1527071771795" duration="523000" />
+      <workItem from="1527071771795" duration="543000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23921000" />
+    <option name="totallyTimeSpent" value="23941000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
