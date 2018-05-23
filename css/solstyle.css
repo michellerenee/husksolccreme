@@ -169,7 +169,22 @@ nav ul li:hover .sol{
   /*background-color: rgba(255, 221, 80, 0.8);*/
 }
 /*--------------------Quiz---------------------*/
+[type="radio"]:checked+span:after, [type="radio"].with-gap:checked+span:after {
+    background-color: #ff801c;
+         
+}
+[type="radio"]:not(:checked)+span:before, [type="radio"]:not(:checked)+span:after {
+    border: 2px solid #141414}
 
+[type="radio"]:checked+span:after, [type="radio"].with-gap:checked+span:before, [type="radio"].with-gap:checked+span:after {
+    border: 2px solid #ff801c;
+}
+label{
+    color: #141414;
+}
+form button{   
+    float: right;
+}
 
 /*---------------Liste styling-----------------*/
 ul.uv-straaling{
