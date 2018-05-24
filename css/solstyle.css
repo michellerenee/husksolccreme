@@ -155,16 +155,42 @@ nav ul li:hover .sol{
 }
 
 .banner-box-text{
-  margin: 60px;
+  margin: 40px;
   z-index: 100;
   position: absolute;
   bottom: 0;
-
 }
 
 .banner-text-right{
   right: 0;
+  text-align: right;
 }
+
+@media all and (max-width: 992px){
+  .banner-box-text{
+    margin: 25px;
+  }
+
+  .banner-box-text p{
+    margin: 0;
+  }
+}
+
+@media all and (max-width: 600px){
+  .banner-box-text{
+    margin: 10px;
+    margin-bottom: 15px;
+  }
+
+  .banner-box-text h2{
+    font-size: 2.4em;
+  }
+
+  .banner-box-text p{
+    display: none;
+  }
+}
+
 /* -- Banner box - knap --*/
 .btn{
   background-color: #ff801c;
