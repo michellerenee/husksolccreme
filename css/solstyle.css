@@ -198,6 +198,35 @@ form button{
     float: right;
 }
 
+#after_submit{
+  background-color: #ff801c;
+  color: white;
+  padding: 10px 20px;
+  width: auto;
+  font-size: 30px;
+  visibility: hidden;
+}
+
+#number_correct{
+  font-size: 35px;
+}
+
+#message{
+  font-style: italic;
+}
+
+.quiz-genopfriskside{
+  display: block;
+  background-color: #287bb2;
+  color: white;
+  text-align: center;
+  margin: 10px 0;
+}
+
+.quiz-genopfriskside:hover{
+  background-color: #009fc1;
+}
+
 /*---------------Liste styling-----------------*/
 ul.uv-straaling{
 margin-bottom: 20px;}
