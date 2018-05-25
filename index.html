@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="da">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -24,8 +24,11 @@
   <!--Import Google Icon Font-->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <!--Import materialize.css-->
-  <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-  <link type="text/css" rel="stylesheet" href="css/solstyle.css"  media="screen,projection"/>
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen">
+  <link type="text/css" rel="stylesheet" href="css/solstyle.css"  media="screen">
+
+  <!-- link til quiz js -->
+  <script src="js/quiz.js"></script>
 </head>
 <body>
 
@@ -86,89 +89,102 @@
       <a class="waves-effect waves-light btn" href="sider/mission.html">lær mere om vores mission</a>
     </div>
   </div>
-	<!-- Quiz -->
-	<div class="quiz"> <h2> Den store solbeskyttelse quiz</h2></div>
-	
-		 <form>
-     <p class="quiztekst">1.Hvad er de 3 sol råd? </p>
-    <p><label>
-        <input name="group1" type="radio" checked />
-        <span> Skygge, solcreme, solhat. </span>
-      </label></p> 
-      <p> <label>
-        <input name="group1" type="radio" checked />
-        <span> Skygge, Sydpå, Solbriller. </span>
-      </label></p>
-     <p>  <label>
- 		 <input name="group1" type="radio" checked />
-        <span> Solvogn, Solcreme, Solbriller. </span>  
+
+  <div class="row">
+    <div class="quiz" id="quiz"> <h2> Den store solbeskyttelse quiz</h2></div>
+    <div class="col l7 m6 s12">
+      <!-- Quiz -->
+      <form name="quiz" method="post">
+        <p class="quiztekst">1. Hvad er de 3 sol råd? </p>
+        <p><label>
+          <input name="question1" type="radio" value="Skygge, solcreme, solhat">
+          <span> Skygge, solcreme, solhat</span>
         </label></p>
-          
-      
-     <p class="quiztekst"> 2.	Hvor meget solcreme skal man bruge? </p>
-     <p> <label>
-        <input name="group2" type="radio" checked />
-        <span> 40 ml </span>
-      </label></p>
-     <p>  <label>
-        <input name="group2" type="radio" checked />
-        <span>20 ml </span>
-      </label></p>
-      <p> <label>
- 		 <input name="group2" type="radio" checked />
-        <span>60 ml</span> 
-        </label></p> 
-     
-    
-    <p class="quiztekst"> 3.Hvor højt skal uv-indekset være for man bør bruge solbeskyttelse?</p>
-    <p>  <label>
-        <input name="group3" type="radio" checked />
-        <span> 3 eller derover</span>
-      </label></p>
-    <p>   <label>
-        <input name="group3" type="radio" checked />
-        <span> 2 eller derover </span>
-      </label></p>
-     <p>  <label>
- 		 <input name="group3" type="radio" checked />
-        <span> 4 eller derover</span> 
+        <p> <label>
+          <input name="question1" type="radio" value="Skygge, Sydpå, Solbriller">
+          <span> Skygge, Sydpå, Solbriller </span>
         </label></p>
-        
-        
-     <p class="quiztekst">4.	Hvornår er solen farligst?</p>
-     <p> <label>
-        <input name="group4" type="radio" checked />
-        <span> 10-16  </span>
-      </label></p>
-      <p> <label>
-        <input name="group4" type="radio" checked />
-        <span> 07-10 </span>
-      </label></p>
-      <p> <label>
- 		 <input name="group4" type="radio" checked />
-        <span> 12-15 </span>   
+        <p>  <label>
+          <input name="question1" type="radio" value="Solvogn, Solcreme, Solbriller">
+          <span> Solvogn, Solcreme, Solbriller </span>
         </label></p>
-        
-        
-    <p class="quiztekst">5.	Hvilken slags tøj giver den bedste beskyttelse mod solen? </p>
-      <p><label>
-        <input name="group5" type="radio" checked />
-        <span> Tæt siddende tøj af løst vævet stof  </span>
-      </label></p>
-      <p> <label>
-        <input name="group5" type="radio" checked />
-        <span> Løst siddende tøj af tæt vævet stof  </span>
-      </label></p>
-     <p> <label>
- 		 <input name="group5" type="radio" checked />
-        <span> Badetøj </span>  
+
+
+        <p class="quiztekst"> 2.	Hvor meget solcreme skal man bruge? </p>
+        <p> <label>
+          <input name="question2" type="radio" value="10 ml">
+          <span> 10 ml </span>
         </label></p>
-                
-    <button class="btn waves-effect waves-light" type="submit" name="action">Submit
-    <i class="material-icons right">send</i>
-    </button>
-  </form>
-  
+        <p>  <label>
+          <input name="question2" type="radio" value="20 ml">
+          <span>20 ml </span>
+        </label></p>
+        <p> <label>
+          <input name="question2" type="radio" value="40 ml">
+          <span>40 ml</span>
+        </label></p>
+
+
+        <p class="quiztekst"> 3. Hvor højt skal uv-indekset være for man bør bruge solbeskyttelse?</p>
+        <p>  <label>
+          <input name="question3" type="radio" value="2 eller derover">
+          <span> 2 eller derover</span>
+        </label></p>
+        <p>   <label>
+          <input name="question3" type="radio" value="3 eller derover">
+          <span> 3 eller derover </span>
+        </label></p>
+        <p>  <label>
+          <input name="question3" type="radio" value="4 eller derover">
+          <span> 4 eller derover</span>
+        </label></p>
+
+
+        <p class="quiztekst">4.	Hvornår er solen farligst?</p>
+        <p> <label>
+          <input name="question4" type="radio" value="7-10">
+          <span> 7-10 </span>
+        </label></p>
+        <p> <label>
+          <input name="question4" type="radio" value="10-13">
+          <span> 10-13 </span>
+        </label></p>
+        <p> <label>
+          <input name="question4" type="radio" value="12-15">
+          <span> 12-15 </span>
+        </label></p>
+
+
+        <p class="quiztekst">5.	Hvilken slags tøj giver den bedste beskyttelse mod solen? </p>
+        <p><label>
+          <input name="question5" type="radio" value="Tæt siddende tøj af løst vævet stof">
+          <span> Tæt siddende tøj af løst vævet stof  </span>
+        </label></p>
+        <p> <label>
+          <input name="question5" type="radio" value="Løst siddende tøj af tæt vævet stof">
+          <span> Løst siddende tøj af tæt vævet stof  </span>
+        </label></p>
+        <p> <label>
+          <input name="question5" type="radio" value="Badetøj">
+          <span> Badetøj </span>
+        </label></p>
+
+        <!-- når der trykkes på submit, køres funktionen check og der returnes false for at siden ikke genopfriskes,
+        så man har mulighed for at se sine resultater -->
+        <button class="btn waves-effect waves-light" type="submit" onclick="check(); return false;">Se resultat
+          <i class="material-icons right">send</i>
+        </button>
+      </form>
+    </div><!-- col end -->
+
+    <div class="col l5 m6 s12">
+      <div id="after_submit">
+        <p id="number_correct"></p>
+        <p id="message"></p>
+        <a class="quiz-genopfriskside" href="./#quiz">Tag testen igen</a>
+      </div><!-- after_submit end -->
+    </div><!-- col end -->
+  </div><!-- row end -->
 
 </div><!-- wrapper end -->
 
@@ -202,7 +218,7 @@
 </footer>
 
 <!-- loader materialize's javascript -->
-<script type="text/javascript" src="js/materialize.min.js"></script>
+<script src="js/materialize.min.js"></script>
 <script>
     document.addEventListener('DOMContentLoaded', function() {
         var elems = document.querySelectorAll('.sidenav');

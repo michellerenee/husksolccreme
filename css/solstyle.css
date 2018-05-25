@@ -155,16 +155,17 @@ nav ul li:hover .sol{
 }
 
 .banner-box-text{
-  margin: 60px;
+  margin: 40px;
   z-index: 100;
   position: absolute;
   bottom: 0;
-
 }
 
 .banner-text-right{
   right: 0;
+  text-align: right;
 }
+
 /* -- Banner box - knap --*/
 .btn{
   background-color: #ff801c;
@@ -198,6 +199,36 @@ form button{
     float: right;
 }
 
+#after_submit{
+  background-color: #ff801c;
+  color: white;
+  padding: 10px 20px;
+  width: auto;
+  font-size: 20px;
+  visibility: hidden;
+  margin-top: 20px;
+}
+
+#number_correct{
+  font-size: 25px;
+}
+
+#message{
+  font-style: italic;
+}
+
+.quiz-genopfriskside{
+  display: block;
+  background-color: #287bb2;
+  color: white;
+  text-align: center;
+  margin: 10px 0;
+}
+
+.quiz-genopfriskside:hover{
+  background-color: #009fc1;
+}
+
 /*---------------Liste styling-----------------*/
 ul.uv-straaling{
 margin-bottom: 20px;}
@@ -223,6 +254,7 @@ form{
 /*------------ Hudtype side -------------------*/
 .img-right{
     max-width: 100%;
+  margin: 5px 0 0 20px;
 }
 
 
@@ -287,6 +319,15 @@ form{
   margin-top: 5px;
 }
 
+div.name{
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+div.name ul li{
+  font-size: 16px;
+}
+
 .box-content .row {
   margin-top: 5px;
   font-size: 12px;
@@ -348,4 +389,33 @@ footer .footer-copyright .container{
 .some-links img{
   width: 70px;
   max-width: 100%;
+}
+
+@media all and (max-width: 992px){
+  .banner-box-text{
+    margin: 25px;
+  }
+
+  .banner-box-text p{
+    margin: 0;
+  }
+}
+
+@media all and (max-width: 600px){
+  .banner-box-text{
+    margin: 10px;
+    margin-bottom: 15px;
+  }
+
+  .banner-box-text h2{
+    font-size: 2.4em;
+  }
+
+  .banner-box-text p{
+    display: none;
+  }
+
+  .img-right{
+    margin: 0;
+  }
 }
