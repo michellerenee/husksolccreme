@@ -1,4 +1,3 @@
-// noinspection JSAnnotator
 function check(){
     // Henter values fra de valgte punkter i quizzen
     var question1 = document.quiz.question1.value;
