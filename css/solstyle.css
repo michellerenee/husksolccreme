@@ -9,8 +9,24 @@ orange: #ff801c;
 rød: #f76769;
 lys-blå: #009fc1;
 mørk-blå: #287bb2;
+
+
+Table of content:
+
+ - basic                       29
+ - nav & logo                  100
+ - banner                      182
+ - quiz                        224
+ - box-overlay hudtyper        277
+ - mission                     356
+ - kontakt                     365
+ - footer                      399
+ - media queries               434
+
 */
 
+
+/*---------- basic --------------------------------------*/
 
 *{
   margin: 0;
@@ -37,10 +53,16 @@ body {
   font-family: Raleway, sans-serif;
 }
 
+.wrapper{
+  min-height: 100vh;
+  height: auto;
+  flex: 1 0 auto;
+}
+
 h1, h2, h3 {
 	font-family: "Amatic SC", serif;
-    margin:0;
-    padding: 0;
+  margin:0;
+  padding: 0;
 }
 
 h2{
@@ -51,12 +73,39 @@ h2{
   margin: 0;
 }
 
-p{ 
-margin-bottom: 15px;
+p{
+  font-size: 16px;
+  margin-bottom: 15px;
 }
 
 .row .col{
   padding: 0;
+}
+
+.img-right{  max-width: 100%;
+  margin: 5px 0 0 20px;
+}
+
+ul.uv-straaling{
+  margin-bottom: 20px;
+}
+
+ul.uv-straaling:not(.browser-default)>li{
+  list-style-type:disc;
+  margin:5px 20px;
+
+}
+
+
+/*---------- nav & logo ---------------------------------*/
+
+.brand-logo{
+  align-self: flex-start;
+}
+
+.brand-logo img{
+  width: 250px;
+  margin-top: 10px;
 }
 
 nav{
@@ -73,22 +122,12 @@ nav ul.right{
 nav ul li a{
   color: #141414;
   font-size: 1.2em;
-    z-index: 10;
-    position: relative;
-   
+  z-index: 10;
+  position: relative;
 }
 
 .sidenav li>a:hover {
   background-color: yellow;
-}
-
-.brand-logo{
-  align-self: flex-start;
-}
-
-.brand-logo img{
-  width: 250px;
-  margin-top: 10px;
 }
 
 .sidenav-trigger{
@@ -96,28 +135,31 @@ nav ul li a{
 }
 
 .sol, .activesol{
-    height: 20px;
-    width: 20px;
-    border-radius: 100%;
-    background-color: #ffdd00;
-    z-index: 1;
-    margin: 15px 0 0 5px;
-    position: absolute;
-    display: none;
-    
+  height: 20px;
+  width: 20px;
+  border-radius: 100%;
+  background-color: #ffdd00;
+  z-index: 1;
+  margin: 15px 0 0 5px;
+  position: absolute;
+  display: none;
 }
+
 .activesol{
-    display: block;   
+  display: block;
 }
+
 .activesoltekst{
-   font-weight: bold; 
+  font-weight: bold;
 }
+
 nav ul a:hover{
-    background-color: transparent;
-    font-weight: bold;
+  background-color: transparent;
+  font-weight: bold;
 }
+
 nav ul li:hover .sol{
-    display: inline;
+  display: inline;
 }
 
 .navigation-banner{
@@ -137,11 +179,7 @@ nav ul li:hover .sol{
 .color-red{ background: #f76769; }
 
 
-.wrapper{
-  min-height: 100vh;
-  height: auto;  
-  flex: 1 0 auto;
-}
+/*---------- banner -------------------------------------*/
 
 .banner-box {
   height: auto;
@@ -149,6 +187,7 @@ nav ul li:hover .sol{
   margin: 20px 0;
   position: relative;
 }
+
 .banner-box img{
     width: 100%;
     z-index: 1;
@@ -181,22 +220,27 @@ nav ul li:hover .sol{
   margin-left: 10px;
 }
 
-/*--------------------Quiz---------------------*/
+
+/*---------- quiz ---------------------------------------*/
+
 [type="radio"]:checked+span:after, [type="radio"].with-gap:checked+span:after {
-    background-color: #ff801c;
-         
+  background-color: #ff801c;
 }
+
 [type="radio"]:not(:checked)+span:before, [type="radio"]:not(:checked)+span:after {
-    border: 2px solid #141414}
+  border: 2px solid #141414
+}
 
 [type="radio"]:checked+span:after, [type="radio"].with-gap:checked+span:before, [type="radio"].with-gap:checked+span:after {
-    border: 2px solid #ff801c;
+  border: 2px solid #ff801c;
 }
+
 label{
-    color: #141414;
+  color: #141414;
 }
+
 form button{   
-    float: right;
+  float: right;
 }
 
 #after_submit{
@@ -229,38 +273,9 @@ form button{
   background-color: #009fc1;
 }
 
-/*---------------Liste styling-----------------*/
-ul.uv-straaling{
-margin-bottom: 20px;}
 
-ul.uv-straaling:not(.browser-default)>li{
-list-style-type:disc;
-margin:5px 20px;
+/*---------- box-overlay hudtyper -----------------------*/
 
-}
-/*----------------Missions side -----------------*/
-/* animation*/
-#animation_container{
-    max-width:  100%;
-    float:right;
-}
-/*Kontakt form */
-form{
-    position: relative;
-}
-.kontaktbtn{
-    float: right;
-}
-/*------------ Hudtype side -------------------*/
-.img-right{
-    max-width: 100%;
-  margin: 5px 0 0 20px;
-}
-
-
-/* Stylesheet for box-overlay */
-
-/* Box-overlay */
 .box {
   width: auto;
   height: 350px;
@@ -268,6 +283,7 @@ form{
   display: inline-block;
   position: relative;
 }
+
 .box-content {
   display: block;
   padding: 15px;
@@ -279,6 +295,7 @@ form{
   -moz-box-sizing: border-box;
   -o-box-sizing: border-box;
 }
+
 .box-overlay {
   width: 100%;
   height: 100%;
@@ -312,6 +329,7 @@ form{
   -moz-box-sizing: border-box;
   -o-box-sizing: border-box;
 }
+
 .box-content span.name {
   display: block;
   font-size: 14px;
@@ -334,7 +352,26 @@ div.name ul li{
   color: #141414;
 }
 
-/*-------------- kontakt styling --------------*/
+
+/*---------- mission ------------------------------------*/
+
+/* animation*/
+#animation_container{
+  max-width:  100%;
+  float:right;
+}
+
+
+/*---------- kontakt ------------------------------------*/
+
+form{
+  position: relative;
+}
+
+.kontaktbtn{
+  float: right;
+}
+
 input:not([type]), input[type=text]:not(.browser-default), input[type=password]:not(.browser-default), input[type=email]:not(.browser-default), input[type=url]:not(.browser-default), input[type=time]:not(.browser-default), input[type=date]:not(.browser-default), input[type=datetime]:not(.browser-default), input[type=datetime-local]:not(.browser-default), input[type=tel]:not(.browser-default), input[type=number]:not(.browser-default), input[type=search]:not(.browser-default), textarea.materialize-textarea{
   border-bottom: 2px solid #141414;
   color: #141414;
@@ -358,7 +395,9 @@ input:not([type]):focus:not([readonly])+label, input[type=text]:not(.browser-def
   left: 0.8rem;
 }
 
-/*--------------- Footer styling --------------*/ 
+
+/*---------- footer -------------------------------------*/
+
 .page-footer{
   background-color: #f1f1f1;
   color: #141414;
@@ -390,6 +429,9 @@ footer .footer-copyright .container{
   width: 70px;
   max-width: 100%;
 }
+
+
+/*---------- media queries ------------------------------*/
 
 @media all and (max-width: 992px){
   .banner-box-text{
